@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/article_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/lgbtq_image" />
+
+        <TextView
+            android:id="@+id/released_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_title"
+            android:layout_marginTop="10dp"
+            android:text="18 Aug, 2018"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="The Great American Condom Campaign"
+            android:textColor="@color/browser_actions_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/article_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="The Future of Sex Education Initiative (FoSE) seeks to create a national dialogue about the future of sex education and to promote the institutionalization of comprehensive sexuality education in public schools. They have developed the first-ever National Sexuality Education Standards, National Teacher Preparation Standards and many additional toolkits and materials to strengthen comprehensive sexuality education implementation and professional development."
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/button_shape"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+
+                android:textColor="@color/browser_actions_bg_grey"
+                android:textSize="12sp" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

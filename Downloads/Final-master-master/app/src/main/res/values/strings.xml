@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="viewHistory">View History</string>
+    <string name="saved">Saved Articles</string>
+    <string name="save">Save This Article</string>
+    <string name="share">Share This Article</string>
+    <string name="viewArticle">View This Article</string>
+    <string name="Article_1">This is the first article.</string>
+    <string name="popular">Popular</string>
+    <string name="username">User Name/Email </string>
+    <string name="password">Password </string>
+    <string name="login">Log In </string>
+    <string name="Signup">Sign Up</string>
+    <string name="input">Enter Here</string>
+    <string name="logout">Log Out</string>
+    <string name="Relationship">Relationship</string>
+    <string name="SexualHealth">Sexual Health</string>
+    <string name="SexualBehavior">Sexual Behavior</string>
+    <string name = "article1title"> Boundaries and Expectations </string>
+
+
+</resources>

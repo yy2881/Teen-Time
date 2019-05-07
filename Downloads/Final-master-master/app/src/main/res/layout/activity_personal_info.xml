@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editname"
+        android:hint="@string/input"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/username"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/password"
+        android:layout_below="@id/username"
+        android:layout_alignBaseline="@id/editpassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editpassword"
+        android:hint="@string/input"
+        android:layout_toRightOf="@id/password"
+        android:layout_below="@id/editname"
+        android:layout_alignLeft="@id/editname"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/password"
+        android:text="@string/Signup"
+        android:id="@+id/signup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="signUp"/>
+
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/signup"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:text="@string/login"
+    android:onClick="logIn"
+        android:id="@+id/login"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/googleSignIn"
+
+
+            android:layout_marginStart="10dp"
+            android:text="Optional:"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/login"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Sign in"
+            android:id="@+id/googleSignIn"
+            android:onClick="googlSignIn"
+            android:background="@drawable/common_google_signin_btn_text_light"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
